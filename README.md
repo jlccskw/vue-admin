@@ -1,6 +1,14 @@
 # jandan-admin
+本项目参考《PanJiaChen/vue-admin-template》项目代码,对其进行了vue-cli的升级，目前使用的vue-cli版本是3.4。
+本项目未对编译做优化，仅提供了一个简单的开发框架。
 
-## Project setup
+### 修复eslint错误
+运行命令安装缺失的插件
+```
+npm install --save-dev eslint-plugin-html
+```
+
+### Project setup
 ```
 npm install
 ```
@@ -24,6 +32,3 @@ npm run test
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
