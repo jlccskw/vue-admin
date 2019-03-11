@@ -7,7 +7,21 @@
 ```
 npm install --save-dev eslint-plugin-html
 ```
+### index.html文件位置变动
+index.html文件被放到public文件夹中了
 
+### 将依赖包安装到开发环境与生产环境的方法
+
+1. 开发环境：npm install --save-dev xxxx
+2. 生产环境：npm install --save xxxx  或者  npm install --production xxxx
+
+### 默认eslint保存添加双引号和分号问题
+
+1. 在.eslintrc.js文件中去掉 "@vue/prettier" 
+2. 在rules中添加：
+            semi: ['error', 'never'],
+            quotes: ['error', 'single']
+  
 ### 在vue-cli3中配置webpack4的方法
 
 1. 在根目录下创建vue.config.js文件
@@ -56,22 +70,7 @@ npm install --save-dev eslint-plugin-html
           }
         ```
 
-### index.html文件位置变动
-index.html文件被放到public文件夹中了
 
-### 将依赖包安装到开发环境与生产环境的方法
-
-1. 开发环境：npm install --save-dev xxxx
-2. 生产环境：npm install --save xxxx  或者  npm install --production xxxx
-
-### 默认eslint保存添加双引号和分号问题
-
-1. 在.eslintrc.js文件中去掉 "@vue/prettier" 
-2. 在rules中添加：
-            semi: ['error', 'never'],
-            quotes: ['error', 'single']
-            
-            
  ### 使用svg
  1.更换svg loader为 svg-sprite-loader，在vue.config.js中添加如下配置
  
